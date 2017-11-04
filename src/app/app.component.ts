@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  animals: Array<Object> = [{
+     id: 1,
+     category: 'mammal',
+     name: 'Dog'
+ },{
+     id: 2,
+     category: 'oviparous',
+     name: 'Duck'
+ },{
+     id: 3,
+     category: 'mammal',
+     name: 'Elephant'
+ },{
+     id: 4,
+     category: 'reptile',
+     name: 'Snake'
+ }];
+
 }
