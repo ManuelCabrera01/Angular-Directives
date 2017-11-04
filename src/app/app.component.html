@@ -16,7 +16,7 @@
 <ul>
     <li *ngFor="let animal of animals; trackBy:animalTrackerFunction">
         <span>  {{ animal.name }} </span>
-        <small> {{ animal.category }} </small>
+        <small class="bordered"> {{ animal.category }} </small>
     </li>
 </ul>
 
@@ -35,4 +35,10 @@
 
 <div [ngStyle]="{ 'background-color': 'blue' }">
     Blue background here
+</div>
+
+<div class="container" [ngSwitch]="2">
+  <div *ngSwitchCase="1"> Value is A </div>
+  <div *ngSwitchCase="2"> Value is B </div>
+  <div *ngSwitchDefault> Value is something else </div>
 </div>
