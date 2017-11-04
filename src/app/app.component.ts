@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  value = "2";
 
   animals: Array<Object> = [{
      id: 1,
