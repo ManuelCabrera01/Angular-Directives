@@ -11,3 +11,11 @@
         {{ i }} - {{ x }} - {{animal.name}}
     </li>
 </ul>
+
+<!-- advance feture -->
+<ul>
+    <li *ngFor="let animal of animals; trackBy:animalTrackerFunction">
+        <span>  {{ animal.name }} </span>
+        <small> {{ animal.category }} </small>
+    </li>
+</ul>
